@@ -4,7 +4,7 @@ Maneira de dar instrução ao computador
 
 ## Peças de uma linguagem 
 
-- Comentários
+- [x]Comentários
 - Declaração de variáveis (const, let)
 - Operadores (atribuição, concatenação, matemáticos, lógicos)
 - Tipos de dados (string, number boolean)
@@ -14,6 +14,20 @@ Maneira de dar instrução ao computador
 
 ## Fases da resolução de um problema
 
-- Coleta dos dados
-- Processar os dados (manipular, alterar...)
--Apresentar os dados
+- Coleta dos dados (função coleta)
+- Processar os dados (manipular, alterar...)(funcao processa)
+- Apresentar os dados(apresenta)
+
+## Escopos e variáveis
+
+- Variáveis: caixinhas que guardam dados, globais e locais "let"
+- Constantes que não mudam "const"
+
+## Tipos de dados
+- String (textos): "" '' ``
+- Number: 1 1.2
+- Function
+
+## Operadores
+
+- Operador de atribuição de valor "="
