@@ -20,14 +20,37 @@ Maneira de dar instrução ao computador
 
 ## Escopos e variáveis
 
-- Variáveis: caixinhas que guardam dados, globais e locais "let"
-- Constantes que não mudam "const"
+-[x]Variáveis: caixinhas que guardam dados, globais e locais "let"
+-[x]Constantes que não mudam "const"
 
 ## Tipos de dados
-- String (textos): "" '' ``
-- Number: 1 1.2
-- Function
+-[x] String (textos): "" '' ``
+-[x] Number: 1 1.2
+-[x] boolean: true or false
+
 
 ## Operadores
 
-- Operador de atribuição de valor "="
+- [x]Operador de atribuição de valor "="
+- [x]Operador de concatenação +
+
+## Estrutura de Dados
+
+[x]-Arrays = vetor
+
+
+## Function
+
+[x]criar, passar argumento
+[x]executar
+[x]arrow function/named function
+
+## Objetos
+
+[x]Atributos e métodos
+[x]Criação e manipulação de dados
+[x]Acesso e propriedades do objetos //sempre que usar o . esta entrando 
+
+
+function: fora do objeto
+metodo: dentro do objeto

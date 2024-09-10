@@ -1,8 +1,16 @@
-// hello,world 
-const mensagem = "Olá, Carlos" //global
+// arrays, objetos array=vetor
+let meta = {       //{} após atribuição de valor significa que é um objeto que está sendo colocado
+    value: 'ler um livro todo mês', 
+    checked: false,
+    log: (info) => {
+        console.log(info)
+    }
+} 
+meta.value = "não é mais ler um livro"
+meta.log(meta.value)
 
-{
-    const mensagem = "olá eu" //escopo local
-    console.log(mensagem)
-}
-console.log(mensagem); 
+//function // arrow function
+
+const criarMeta = () => {} //arrow function
+
+//function criarMeta() {} //criacao de funcao
