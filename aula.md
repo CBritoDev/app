@@ -5,12 +5,12 @@ Maneira de dar instrução ao computador
 ## Peças de uma linguagem 
 
 - [x]Comentários
-- Declaração de variáveis (const, let)
+- [x]Declaração de variáveis (const, let)
 - Operadores (atribuição, concatenação, matemáticos, lógicos)
-- Tipos de dados (string, number boolean)
-- Estrutura de dados (functions, object, array)
-- Controle de fluxo (in\else)
-- Estrutura de repetição (for, while)
+- [x]Tipos de dados (string, number boolean)
+- [x]Estrutura de dados (functions, object, array)
+- [x]Controle de fluxo (if\else)
+- [x]Estrutura de repetição (for, while)
 
 ## Fases da resolução de um problema
 
@@ -31,8 +31,9 @@ Maneira de dar instrução ao computador
 
 ## Operadores
 
-- [x]Operador de atribuição de valor "="
+- [x]Operador de atribuição de valor =
 - [x]Operador de concatenação +
+- [X]Operadores de compração: 1==2 retorna um v ou f / != / < / > / <=/ =>
 
 ## Estrutura de Dados
 
@@ -62,9 +63,15 @@ metodo: dentro do objeto
 ## Condicional
 
 -[x] switch
+-[x] if/else
 
 
 ## Modulos em node.js
 
 -[x]Importacao de modulos (require, CommonJS)
 -[x]Biblioteca 'inquirer' para criar prompts interativos
+
+## Programaçao assincronas e promises
+
+-[x] Uso de funcoes assincronas (async/await)
+
