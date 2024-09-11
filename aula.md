@@ -62,3 +62,9 @@ metodo: dentro do objeto
 ## Condicional
 
 -[x] switch
+
+
+## Modulos em node.js
+
+-[x]Importacao de modulos (require, CommonJS)
+-[x]Biblioteca 'inquirer' para criar prompts interativos
