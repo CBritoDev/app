@@ -54,3 +54,11 @@ Maneira de dar instrução ao computador
 
 function: fora do objeto
 metodo: dentro do objeto
+
+## Estrutura de repetição 
+
+- [x]while
+
+## Condicional
+
+-[x] switch
