@@ -34,10 +34,15 @@ Maneira de dar instrução ao computador
 - [x]Operador de atribuição de valor =
 - [x]Operador de concatenação +
 - [X]Operadores de compração: 1==2 retorna um v ou f / != / < / > / <=/ =>
+- [x] spread operator ...
+
 
 ## Estrutura de Dados
 
-[x]-Arrays = vetor
+## Arrays = vetor
+-[x] Uma lista que contem qualquer tipo de dado
+-[x] Método de array:  push, {find, forEach ,filter} higher order functions 
+//toda funcao que ta dentro do objeto
 
 
 ## Function
