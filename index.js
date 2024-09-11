@@ -35,6 +35,22 @@ const listarMetas = async () => {
         console.log('Meta(s) marcadas como concluida(s)')
 }
 
+const metasAbertas = async () => {
+        const abertas = metas.filter((meta) =>{
+                return  meta.checked != true
+        })
+
+        if(abertas.length == 0) {
+                console.log('Não existem metas abertas :)')
+                return
+        }
+
+        await select({
+                message : "Metas abertas " + abertas.length,
+                choices: [...abertas]
+        })
+}
+
 const metasRealizadas = async () => {
         const realizadas = metas.filter((meta) => {
                 return meta.checked
@@ -45,10 +61,12 @@ const metasRealizadas = async () => {
                 return
         }
         await select({
-                message: "Metas Realizadas",
+                message: "Metas Realizadas "+ realizadas.length,
                 choices: [...realizadas] //joga uma dentro da outra
         })
 }
+
+
 
 const cadastrarMeta = async () => {
         const meta = await input({ message: "Digite a meta"})
@@ -82,6 +100,10 @@ const start = async () => { //quando tem await precisa ter o async //async porqu
                                         value: "realizadas"
                                 },
                                 {
+                                        name: "Metas Abertas",
+                                        value: "abertas"
+                                },
+                                {
                                         name: "Sair",
                                         value: "sair"
                                 }
@@ -104,6 +126,11 @@ const start = async () => { //quando tem await precisa ter o async //async porqu
                         case "realizadas":
                                 await metasRealizadas()
                                 break
+
+                        case "abertas":
+                                await metasAbertas()
+                                break
+
 
                         case "sair":
                                 console.log("Até a próxima!")
