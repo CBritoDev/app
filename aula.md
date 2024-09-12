@@ -58,8 +58,8 @@ Maneira de dar instrução ao computador
 [x]Acesso e propriedades do objetos //sempre que usar o . esta entrando 
 
 
-function: fora do objeto
-metodo: dentro do objeto
+[x]function: fora do objeto
+[x]metodo: dentro do objeto
 
 ## Estrutura de repetição 
 

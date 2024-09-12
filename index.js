@@ -142,7 +142,6 @@ const mostrarMensagem = () => {
 }
 
 
-
 const cadastrarMeta = async () => {
         const meta = await input({ message: "Digite a meta"})
 
@@ -219,10 +218,9 @@ const start = async () => { //quando tem await precisa ter o async //async porqu
 
                         case "sair":
                                 console.log("Até a próxima!")
-                                return // para a funcao start
+                                return 
                 }
         
         }
 }
-
 start()
