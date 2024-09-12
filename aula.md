@@ -75,6 +75,13 @@ metodo: dentro do objeto
 
 -[x]Importacao de modulos (require, CommonJS)
 -[x]Biblioteca 'inquirer' para criar prompts interativos
+-[x] FS(file system)
+
+## Jason
+
+-[x]JavaScript object notation (.json)
+-[x] JSON.parse() // transforme de json para para js
+-[x] JSON.stringfy() // transforma de js para json
 
 ## Programaçao assincronas e promises
 

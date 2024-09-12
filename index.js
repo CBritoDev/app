@@ -1,13 +1,32 @@
 const { select, input, checkbox} = require('@inquirer/prompts') //necesita de um modulo que vem de fora
+const fs = require("fs").promises
 
 let mensagem = "Bem vindo ao App de Metas";
-let meta = {
-        value: 'Tomar 3l de água por dia',
-        checked: false,
+
+
+const carregarMetas = async () => {
+        try {
+                const dados = await fs.readFile("metas.json","utf-8")
+                metas = JSON.parse(dados)
+        }
+        catch(erro) {
+                metas = []
+        }
 }
-let metas = [ meta ]
+
+const salvarMetas = async () => {
+        await fs.writeFile("metas.json", JSON.stringify(metas, null, 2))
+}
+
+
 
 const listarMetas = async () => {
+
+        if (metas.length == 0) {
+
+                mensagem = "Não existem metas!"
+                return
+        }
         const respostas = await checkbox({
                 message: "Use as setas para mudar de meta, o espaço para marcar/desmarcar e o enter para finalizar essa etapa",
                 choices: [...metas],
@@ -37,6 +56,13 @@ const listarMetas = async () => {
 }
 
 const metasAbertas = async () => {
+
+        if (metas.length == 0) {
+
+                mensagem = "Não existem metas!"
+                return
+        }
+
         const abertas = metas.filter((meta) =>{
                 return  meta.checked != true
         })
@@ -53,6 +79,12 @@ const metasAbertas = async () => {
 }
 
 const metasRealizadas = async () => {
+        if (metas.length == 0) {
+
+                mensagem = "Não existem metas!"
+                return
+        }
+
         const realizadas = metas.filter((meta) => {
                 return meta.checked
         })
@@ -68,6 +100,12 @@ const metasRealizadas = async () => {
 }
 
 const deletarMetas = async () => {
+
+        if (metas.length == 0) {
+
+                mensagem = "Não existem metas!"
+                return
+        }
         const metasDesmarcadas = metas.map((meta) => { //higher order function
                 return {value: meta.value , checked: false}
         }) 
@@ -120,9 +158,10 @@ const cadastrarMeta = async () => {
 }
 
 const start = async () => { //quando tem await precisa ter o async //async porque nao sabe quando vai continuar
-        
+        await carregarMetas()
         while(true){ //é o menu
                 mostrarMensagem()
+                await salvarMetas()
 
                 const opcao = await select({ // sempre que houver um select, precisa ter o conteudo abaixo exatamente igual //await sempre tem uma promessa de resposta
                         message: "Menu >",
