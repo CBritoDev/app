@@ -6,7 +6,7 @@ Maneira de dar instrução ao computador
 
 - [x]Comentários
 - [x]Declaração de variáveis (const, let)
-- Operadores (atribuição, concatenação, matemáticos, lógicos)
+- [x]Operadores (atribuição, concatenação, matemáticos, lógicos)
 - [x]Tipos de dados (string, number boolean)
 - [x]Estrutura de dados (functions, object, array)
 - [x]Controle de fluxo (if\else)
@@ -41,7 +41,7 @@ Maneira de dar instrução ao computador
 
 ## Arrays = vetor
 -[x] Uma lista que contem qualquer tipo de dado
--[x] Método de array:  push, {find, forEach ,filter} higher order functions 
+-[x] Método de array:  push, {find, forEach ,filter, map} higher order functions 
 //toda funcao que ta dentro do objeto
 
 
